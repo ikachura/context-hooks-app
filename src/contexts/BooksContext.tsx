@@ -1,10 +1,5 @@
 import React from 'react'
-
-export type Book = {
-  id: string
-  title: string
-  pagesAmount: number
-}
+import {Book} from '../interfaces/Book'
 
 type BooksState = {
   books: Book[]

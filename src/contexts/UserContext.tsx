@@ -1,10 +1,7 @@
 import React from 'react'
+import {User} from '../interfaces/User'
 
-type UserState = {
-  firstName: string
-  lastName: string
-  age?: number
-  bookIds: string[]
+type UserState = User & {
   changeFirstName: (value: string) => void
 }
 
