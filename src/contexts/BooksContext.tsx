@@ -10,9 +10,7 @@ type BooksState = {
   books: Book[]
 }
 
-export const BooksContext = React.createContext<BooksState>({
-  books: [],
-})
+export const BooksContext = React.createContext<BooksState>((undefined as any) as BooksState)
 
 export class BooksProvider extends React.Component<any, BooksState> {
   constructor(props: any) {

@@ -8,13 +8,7 @@ type UserState = {
   changeFirstName: (value: string) => void
 }
 
-export const UserContext = React.createContext<UserState>({
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 22,
-  bookIds: [],
-  changeFirstName: (value: string) => {},
-})
+export const UserContext = React.createContext<UserState>((undefined as any) as UserState)
 
 export class UserProvider extends React.Component<any, UserState> {
   constructor(props: any) {
